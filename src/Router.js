@@ -1,26 +1,22 @@
-import React from 'react';
+import React from "react";
+import Home from './components/Home';
+import Chat from './components/Chat'
 import {
-  BrowserRouter as Router,
-  Switch,
+  HashRouter as Router,
   Route,
-} from "react-router-dom";
-import Home from './pages/Home'
-import Chat from './pages/Chat'
-
-export default class Routers extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-    }
-  }
+  Switch
+} from 'react-router-dom'
+class Routers extends React.Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route path='/' exact render={Home} />
-          <Route path='/chat' render={Chat} />
+          <Route path="/" exact component={Home} />
+          <Route path="/Chat" component={Chat} />
         </Switch>
       </Router>
-    )
+    );
   }
 }
+
+export default Routers;
