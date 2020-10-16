@@ -1,6 +1,6 @@
 import React from "react";
-import Home from './components/Home';
-import Chat from './components/Chat'
+import Home from './pages/Home';
+import Chat from './pages/Chat'
 import {
   HashRouter as Router,
   Route,
