@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/GPF19930903/communication#readme",
   "dependencies": {
+    "antd": "^4.7.3",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1"
